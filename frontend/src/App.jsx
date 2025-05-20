@@ -10,7 +10,10 @@ import Projects from "./components/frontend/Projects";
 import Blogs from "./components/frontend/Blogs";
 import "./assets/css/style.scss";
 import ContactUs from "./components/frontend/ContactUs";
-
+import Login from "./components/backend/login";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Dashboard from "./components/backend/Dashboard";
 function App() {
   //const [count, setCount] = useState(0);
 
@@ -24,8 +27,11 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/admin/login" element={<Login />} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer position="top-center" />
     </>
   );
 }
