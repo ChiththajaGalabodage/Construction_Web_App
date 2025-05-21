@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
-//import Sidebar from "../common/Sidebar";
+import Sidebar from "../common/Sidebar";
 
 const Dashboard = () => {
   return (
@@ -10,7 +10,9 @@ const Dashboard = () => {
       <main>
         <div className="container my-5">
           <div className="row">
-            <div className="col-md-3"></div>
+            <div className="col-md-3">
+              <Sidebar />
+            </div>
 
             <div className="col-md-9 dashboard">
               <div className="card shadow border-0">

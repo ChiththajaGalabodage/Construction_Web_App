@@ -321,8 +321,6 @@ footer {
 .section-9 {
   .card {
     border-radius: 40px;
-    .card-body {
-    }
   }
 }
 
@@ -335,5 +333,17 @@ footer {
 .dashboard {
   .card {
     min-height: 400px;
+  }
+}
+
+.sildebar {
+  ul {
+    li {
+      a {
+        display:block;
+        padding: 10px 0;
+        border-bottom: 1px solid  rgba(0, 0, 0, 0.20)
+      }
+    }
   }
 }
